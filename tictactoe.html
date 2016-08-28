@@ -95,6 +95,43 @@ input {
 Contact GitHub API Training Shop Blog About
 
 	</style>
+
+</head>
+<body>
+	<center> <h1> <br> Tic Tac Toe  <br> <hr>  Two players
+		</h1> </center>
+
+
+<div id="game-wrap">
+
+	<div class="row">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+	</div>
+
+
+	<div class="row">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+	</div>
+
+
+	<div class="row">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+	</div>
+
+</div>
+
+<div id="panel">
+	<input type="text" id="player-1-inp" placeholder="Enter player 1">
+	<input type="text" id="player-2-inp" placeholder="Enter player 2">
+	<button id="playButton">Play!</button>
+	<h1 id="board"></h1>
+</div>
 <script> var player1Name="" , player2Name="", turn = ""; //variables for player names
 var grid =  [[0,0,0],[0,0,0],[0,0,0]];  // array for mapping the moves of players
 var hasWinner = 0, moveCount=0; // flag varables for finding winners and counting total no. of moves
@@ -241,43 +278,6 @@ function winnerCheck(n,playerName){               // Winning conditions
 	return false;
 }
 </script>
-</head>
-<body>
-	<center> <h1> <br> Tic Tac Toe  <br> <hr>  Two players
-		</h1> </center>
-
-
-<div id="game-wrap">
-
-	<div class="row">
-		<div class="col"></div>
-		<div class="col"></div>
-		<div class="col"></div>
-	</div>
-
-
-	<div class="row">
-		<div class="col"></div>
-		<div class="col"></div>
-		<div class="col"></div>
-	</div>
-
-
-	<div class="row">
-		<div class="col"></div>
-		<div class="col"></div>
-		<div class="col"></div>
-	</div>
-
-</div>
-
-<div id="panel">
-	<input type="text" id="player-1-inp" placeholder="Enter player 1">
-	<input type="text" id="player-2-inp" placeholder="Enter player 2">
-	<button id="playButton">Play!</button>
-	<h1 id="board"></h1>
-</div>
-
 
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
